@@ -180,6 +180,12 @@ nav a:focus-visible {
   height: auto;           /* Maintains aspect ratio */
   padding-bottom: 25px;   /* Space below image so text isn’t too close */
 }
+img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
 .embed-video {
   padding-bottom: 25px;
 }
