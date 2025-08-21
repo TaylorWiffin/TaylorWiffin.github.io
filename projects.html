@@ -3,91 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taylor's Teaching Portfolio</title>
+    <title>Taylor's Teaching Portfolio - Project Showcase</title>
+    <link rel="stylesheet" href="starter.css">
+
 </head>
 <body>
     <!-- This is the header for my page, in line with Semantic HTML --> 
     <header> 
-        <h1 style="color:#0000ff">Project Showcase</h1>
+        <h1>Project Showcase</h1>
     </header> 
     <!-- Navigation menu section --> 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teaching.html">Teaching Practice</a></li>
+                <li><a class="active" href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- This is the main content area for my page -->
     <main>
-        <!-- This section is focused on showcasing projects/units ive taught - in flexbot format -->
+        <!-- This section is focused on showcasing projects/units ive completed - in flexbot format -->
         <section>
-            <style>
-                .flexcontainer {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                    justify-content: space-between;
-                    margin-top: 20px;
-                }
-                .project-card {
-                    flex: 1 1 150px;
-                    background-color: #f9f9f9;
-                    border: 1px solid #ddd;
-                    padding: 15px;
-                    border-radius: 8px;
-                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-                }
 
-                .project-card img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 4px;
-                }
-
-                .project-card h3 {
-                    margin-top: 10px;
-                    font-size: 1.1rem;
-                    color: #2c3e50
-                }
-
-            </style>
             <div class="flex-container">
                 <div class="project-card">
-                    <img src="images/PjSet.jpeg" alt="Photo of pyjama pants, screen printed top and tote bag on a mannequin">
-                    <h3>This is the first PJ set I made in Textiles at uni.</h3>
-                    <p>jfdhsjhdjkfndkjsnf</p>
+                    <img src="images/PjSet.jpeg" alt="Photo of pyjama pants, screen printed top and tote bag on a mannequin" width="250px">
+                    <h3>TECH108 - Pyjama Set</h3>
+                    <p>The pyjama set includes light pink koala themed long pants, that is paired with a grey cotton v-neck t-shirt to colour match the koalas on the pyjama pants pattern. The eucalyptus leaf in the centre of the t-shirt has been screen-printed on with dark green ink, which is also showcased throughout the pants. The tote-bag has a pocket placed in the centre, which utilises the matching koala patterned fabric, as well as a white button and pink loophole. </p>
                 </div>
 
                 <div class="project-card">
-                    <img src="images/MiniFeltWallHanging.jpeg">
-                    <h3>LED</h3>
-                    <p>jfnjenjfirhfiuerf</p>
+                    <img src="images/MiniFeltWallHanging.jpeg" alt="Photo of LED felt-wall hanging" width="250px">
+                    <h3>TECH108 - E-Textiles Felt Wall Hanging</h3>
+                    <p>A felt banner using pieces of commercial wool felt and hand-made felt, to create a mini wall hanging banner that presents a hawaiian theme. Additionally, the banner also has a working electronic soft circuit embdedded into the centre of the flower and surfboard, using conductive threads and small LEDs.</p>
                 </div>
 
                 <div class="project-card">
-                    <img src="images/QuiltGreen.jpeg">
-                    <img src="images/QuiltPink.jpeg">
-                    <h3>Quilts</h3>
-                    <p>dhfdhfeiohjf</p>
+                    <img src="images/QuiltPink.jpeg" alt="photo of 9x9 floral quilt">
+                    <h3>TECH209 - Quilt</h3>
+                    <p>This nine patch quilt utilises light and pastel colours, to constrast with the vibrant yellow dyed fabric positioned around the centre of the piece, as well as the dark liquid radiance purple fabric on the outer of the patch design. In drawing inspiration from the Australian print designer, Lisa Gorman, colour contrast has been utilised, in conjunction with floral and botanical symbols screen printed in bold white, reflecting her contradicting and variation in patterns.</p>
                 </div>
 
                 <div class="project-card">
-                    <img src="images/ThreadSpinner.jpeg">
-                    <h3>Thread Spinner</h3>
-                    <p>dhfdhfeiohjf</p>
+                    <img src="images/ThreadSpinner.jpeg" alt="photo of electromechanics thread spinner machine">
+                    <h3>TECH211 - Thread Winder</h3>
+                    <p>An automatic bobbin and thread winder model. A floss card or bobbin can be inserted into the machine, as well as the thread intended to wind, will spin and wind up, storing the thread onto the card. The model is powered by a switch connected to wall power, in which the user wraps their thread around the card, and waits for the ultrasonic sensor to detect there is an object and will begin its automation.</p>
                 </div>
        
                 <div class="project-card">
-                    <img src="images/MedievalCostume.jpg">
-                    <h3>Medieval Costume - Group Task</h3>
-                    <p>dhfdhfeiohjf</p>
+                    <img src="images/MedievalCostume.jpg" alt="photo of textiles medieval herbalist costume">
+                    <h3>TECH212 - Medieval Costume - Group Task</h3>
+                    <p>A medieval costume is was intended for an ACU student to wear to the on-campus live Medieval history event. The earth toned ensemble, representing a herbalist, consists of a chemise, kirtle, apron and a cape/hood. The ensemble also features a belt, where a satchel connects to it, enhancing the functional aspects of the design allowing for ease of transportation of herbs and herbal potions.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/Case2CarryBag.jpeg" alt="photo of multifunctional Case2Carry Bag">
+                    <h3>TECH306 - Case2Carry</h3>
+                    <p>The ultimate multifunctional tech bag for families on the go! Designed to securely store both your iPad and MacBook, this innovative bag transforms into a convenient car-seat display, attaching to the back of the front car seats. It’s the perfect way to keep your child entertained with their favourite show while you enjoy a stress-free drive.</p>
                 </div>
         </section>
-
-
-
     </main>
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Taylor Wiffin. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

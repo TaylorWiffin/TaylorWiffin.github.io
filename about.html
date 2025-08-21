@@ -3,79 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taylor's Teaching Portfolio</title>
+    <title>Taylor's Teaching Portfolio - About Me</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
 <body>
     <!-- This is the header for my page --> 
     <header>
-        <h1 style="color:#0000ff">About Me</h1>
+        <h1>About Me</h1>
     </header>
     <!-- Navigation menu section --> 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="teaching.html">Teaching Practice</a></li>
+                <li><a href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- This is the main content area for my page --> 
-     <main>
-     
+    <main>
     <!-- This section is about me --> 
     <section>
-        <p>My name is <strong>Taylor Wiffin.</strong> Currently, I am in my third year of study at ACU, undertaking the Bachelor of Education (Secondary)/Bachelor of Arts
-        (Design and Innovation). My major is Textiles and I also minor in Food Technology. I currently work at Fairfield West Public School as an SLSO and play and coach netball. I look forward to teaching <a href= https://www.nsw.gov.au/education-and-training/nesa/curriculum/tas target="_blank"> Stage 6 Textiles and Design.</a></p>
-        <img src="images/TWprofilepicture.png" alt="Portrait of Taylor Wiffin" width="250px">
+        <article class="profile">
+            <div class="profile-text">
+                <p>My name is <strong>Taylor Wiffin.</strong> Currently, I am in my third year of study at ACU, undertaking the Bachelor of Education (Secondary)/Bachelor of Arts (Design and Innovation). My major is Textiles and I also minor in Food Technology. I currently work at Fairfield West Public School as an SLSO and play and coach netball. I look forward to teaching <a href= https://www.nsw.gov.au/education-and-training/nesa/curriculum/tas target="_blank"> Stage 6 Textiles and Design.</a></p>
+                <h2>My Background</h2>
+                <p>sdbhfjkdshf</p>
+            </div>
+            <div class="profile-photo">
+                <img src="images/TWprofilepicture.png" alt="Portrait of Taylor Wiffin" width="250px">
+            </div>
+        </article>
     </section>
 
-    
-    <!-- This section is about my teaching philosophy --> 
+
+    <!-- This section is about my interests --> 
     <section>
-        <h1 style="color:#0000ff">My Teaching Philosophy</h1>
-        <p>My teaching philosophy is based on developing and maintaining a supportive and safe learning environment where every student feels valued, respected and motivated to achieve success. It is vital to support students learning and guiding positive behaviour that students are motivated to continue both inside and outside the classroom. My approach aims to encourage student choice, empowering students to take responsibility for their actions. Overall, the poster below symbolises what type of teacher I aim to be, in fostering student's learning and encouraging them to do their best.</p>
-        <img src="images/TeachingPhilosophyInfographic.png" alt="Visual infographic foreshadowing my teaching philosophy" width="250px">
+        <h1>My Interests</h1>
+        <p>hasjkdhsjhfishf</p>
+        <img src="images/MyInterests.png" alt="Visual infographic foreshadowing my teaching philosophy" width="250px">
     </section>
 
     <!-- This section is focused on providing a practicum placement overview in table format --> 
     <section>
-        <style>
-            table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top:10 px;
-            font-family: Arial, sans-serif;
-            }
-
-            th, td {
-            border: 1px solid;
-            padding: 10px 12px;
-            text-align: left;
-            }
-
-            thead {
-            background-color: color#0000ff;
-            }
-
-            th{
-            color: color#0000ff;
-            font-weight: bold;
-            }
-
-            tr:nth-child(even) {
-            background-color: color#0000ff;
-            }
-
-            h2 {
-            font-family: 'Segoe UI', sans-serif;
-            font-size: 1.4rem;
-            margin-bottom: 8px;
-            color: color#0000ff;
-            }
-
-        </style>
         <h2>Practicum Placement Overview</h2>
             <table>
                 <thead>
@@ -109,5 +83,10 @@
             </table>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Taylor Wiffin. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
