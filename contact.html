@@ -20,6 +20,8 @@
                 <li><a href="teaching.html">Teaching Practice</a></li>
                 <li><a href="projects.html">Project Showcase</a></li>
                 <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resources.html">Resources</a></li>
                 <li><a class="active" href="contact.html">Contact Me</a></li>
             </ul>
         </div>
@@ -27,16 +29,25 @@
     <!-- This is the main content area for my page, in line with Semantic HTML --> 
     <main>
         <!-- This is the section for ... --> 
-        <section>
-            <article class="profile">
-                <div class="profile-text">
-                    <h2>About Me</h2>
-                    <p>This is where your bibliography text goes...</p>
-                </div>
-                <div class="profile-photo">
-                    <img src="images/TWprofilepicture.png" alt="oval-shaped portrait of Taylor Wiffin" width="250px">
-                </div>
-            </article>
+        <section class="section">
+            <form id="contact-form" action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Your details</legend>
+                    <!-- Form text input for Full Name -->
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" placeholder="John Smith" required minlength="6" autocomplete="name">
+                    <!-- Form text input for Email address -->
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+                    <!-- Form text input for Message -->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="How can I help?" required minlength="8"></textarea>
+                    <!-- honeypot anti-spam field -->
+                    <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;"> 
+                    <!-- button tag used for input, in line with Semantic HTML-->
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
         </section>
     </main>
     <!-- This is the footer section for my page, in line with Semantic HTML --> 
